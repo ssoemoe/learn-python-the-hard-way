@@ -1,0 +1,16 @@
+# reading
+file = open("demo.txt")
+print(file.read())
+file = open("demo.txt")
+print(file.readlines())
+file = open("demo.txt", "r")
+print(file.readline())
+
+print("-" * 25, " With Open ", "-" * 25)
+
+with open("demo.txt") as file:
+    print(file.read())
+
+print("-" * 25, " Importing ", "-" * 25)
+from learning.contents import greeting
+print(greeting)
